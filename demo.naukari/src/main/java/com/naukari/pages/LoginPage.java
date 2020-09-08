@@ -38,9 +38,10 @@ public class LoginPage extends TestBase{
 		
 			}
 	
-	public void submit() {
+	public HomePage submit() {
 		
 		submit.click();
+		return new HomePage();
 	}
 		
 	

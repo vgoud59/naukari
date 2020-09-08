@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.naukari.testcases.LoginTest">
+      <class name="com.naukari.testcases.HomeTest">
         <methods>
-          <include name="Click"/>
+          <include name="update"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.naukari.testcases.LoginTest -->
+      </class> <!-- com.naukari.testcases.HomeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
