@@ -8,7 +8,6 @@ import com.naukari.pages.LoginPage;
 
 public class LoginTest  extends TestBase{
 	LoginPage loginpage;
-	HomePage homepage;
 	
 	public LoginTest() {
 		super();
@@ -18,12 +17,19 @@ public class LoginTest  extends TestBase{
 	@BeforeMethod
 	public void setup() {
 		initialization();
+		loginpage = new LoginPage();
 		
 	}
+	
+	
     @Test
+    
     public void Login() {
     	loginpage.clickonlogin();
+    	
     	loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
-    	loginpage.Submit
-    }
+    	loginpage.submit();
+    	}
+    
 }
+
