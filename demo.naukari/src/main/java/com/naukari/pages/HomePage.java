@@ -5,6 +5,7 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.io.File;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -42,10 +43,13 @@ public class HomePage extends TestBase {
 	}
 
    public void uploadcv() {
-	   uploadcv.sendKeys("A:\\Users\\Kesari  Vamshi Goud\\Desktop\\resume-samples.pdf");
+	   uploadcv.sendKeys(getFile());
 	  
    }
-   
+String getFile() {
+	return new File ("./file/resume.pdf").getAbsolutePath();
+	
+}
    
    
 	public void Robot() throws AWTException
@@ -58,7 +62,7 @@ public class HomePage extends TestBase {
 		   robot.setAutoDelay(3000);
 		    
 		    robot.setAutoDelay(10000);
-		StringSelection stringSelection = new StringSelection ("A:\\Users\\Kesari  Vamshi Goud\\Desktop\\resume-samples.pdf");
+		StringSelection stringSelection = new StringSelection ("./file/resume.pdf");
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
 		robot.setAutoDelay(1000);
 		robot.keyPress(KeyEvent.VK_CONTROL);

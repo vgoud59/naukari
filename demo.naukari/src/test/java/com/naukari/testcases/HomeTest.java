@@ -1,8 +1,5 @@
 package com.naukari.testcases;
 
-import java.awt.Toolkit;
-import java.awt.datatransfer.StringSelection;
-import java.awt.event.KeyEvent;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
