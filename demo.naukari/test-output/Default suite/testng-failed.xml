@@ -5,7 +5,7 @@
     <classes>
       <class name="com.naukari.testcases.HomeTest">
         <methods>
-          <include name="update"/>
+          <include name="uploadcv"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.naukari.testcases.HomeTest -->

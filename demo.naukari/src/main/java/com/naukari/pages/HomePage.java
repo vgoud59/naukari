@@ -1,5 +1,11 @@
 package com.naukari.pages;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -7,6 +13,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.naukari.base.TestBase;
 
 public class HomePage extends TestBase {
+	
 	
 	
 	
@@ -38,7 +45,37 @@ public class HomePage extends TestBase {
 	   uploadcv.sendKeys("A:\\Users\\Kesari  Vamshi Goud\\Desktop\\resume-samples.pdf");
 	  
    }
+   
+   
+   
+	public void Robot() throws AWTException
+
+	   {     
+		
+		   
+		     
+		   Robot robot = new Robot();
+		   robot.setAutoDelay(3000);
+		    
+		    robot.setAutoDelay(10000);
+		StringSelection stringSelection = new StringSelection ("A:\\Users\\Kesari  Vamshi Goud\\Desktop\\resume-samples.pdf");
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+		robot.setAutoDelay(1000);
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyRelease(KeyEvent.VK_V);
+		
+		robot.setAutoDelay(1000);
+
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		
+		
+	   }
 	
+   
+   
    
 		
 	}

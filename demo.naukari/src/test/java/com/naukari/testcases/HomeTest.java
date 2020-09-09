@@ -1,6 +1,9 @@
 package com.naukari.testcases;
 
-import org.openqa.selenium.interactions.Actions;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -34,6 +37,10 @@ public class HomeTest extends TestBase {
     	loginpage.submit();
     	homepage.closechat();
     	homepage.update();
+    	
+    	
+  
+        
 	}
 	
 	
@@ -41,14 +48,12 @@ public class HomeTest extends TestBase {
 	public void uploadcv() {
 		
 		
-		
 		homepage.uploadcv();
 		
 		
+		
+		
 	}
-	
-	
-	
 	
 	
 	
