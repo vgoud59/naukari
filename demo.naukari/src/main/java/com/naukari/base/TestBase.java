@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import com.naukari.utill.TestUtills;
 
@@ -37,7 +38,7 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		if(browserName.equals("chrome")){
 			System.setProperty("webdriver.chrome.driver", "A:\\selenium\\chromedriver_win32\\chromedriver.exe");	
-			driver = new ChromeDriver(); 
+			driver = new ChromeDriver();
 	}
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();

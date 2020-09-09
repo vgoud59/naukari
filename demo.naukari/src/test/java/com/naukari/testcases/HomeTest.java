@@ -1,5 +1,6 @@
 package com.naukari.testcases;
 
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -25,7 +26,9 @@ public class HomeTest extends TestBase {
 		initialization();
 		loginpage = new LoginPage();
 		homepage = new HomePage();
-         loginpage.clickonlogin();
+		
+		
+		loginpage.clickonlogin();
     	
     	loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
     	loginpage.submit();
@@ -38,7 +41,9 @@ public class HomeTest extends TestBase {
 	public void uploadcv() {
 		
 		
+		
 		homepage.uploadcv();
+		
 		
 	}
 	

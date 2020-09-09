@@ -36,8 +36,10 @@ public class HomePage extends TestBase {
 
    public void uploadcv() {
 	   uploadcv.sendKeys("A:\\Users\\Kesari  Vamshi Goud\\Desktop\\resume-samples.pdf");
+	  
    }
 	
+   
 		
 	}
 	
